@@ -1,0 +1,38 @@
+
+/* background: linear-gradient(to bottom, #1a1a1a 50%, #fdfdfd 50%); */
+
+/* Configuración básica para tu app */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para que el layout funcione bien */
+main {
+  flex: 1;
+}
+
+header {
+  z-index: 10;
+}
+
+footer {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+/* --black: #272727;
+    --anchor-grey: #313436;
+    --off-white: #fbf8f3;
+    --white: white;
+    --light-grey: #a0a0a0;
+    --hover: #7e7e7e;
+    --lincoln-blue: #2fabaa; */

@@ -1,0 +1,130 @@
+.calling-section {
+  color: black;
+  background-color: #fdfdfd;
+  padding: 3rem 0rem 6rem 0rem;
+  width: 100%;
+}
+
+.calling-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  padding-inline: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.calling-phrase{
+  flex: 2 1 70%; /* grow: 2, shrink: 1, base: 70% width */
+  font-size: 3.5rem;
+  font-family: "Bebas Neue",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: 100%;
+  font-variation-settings: "wght" 500, "slnt" 0;   
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 0.9;
+  text-align: left;
+}
+
+.calling-info{
+  flex: 1 1 30%;
+  line-height: 1.5;
+  text-align: left;
+  margin: auto;
+  color: #555;
+}
+
+.btn-container-calling{
+ margin-top: 2.5rem;
+}
+
+.btn-calling {
+  background: transparent;
+  color:#313436;
+  border: 2px solid #313436;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-calling:hover{
+  background: black;
+  color: white;
+  border: 2px solid black;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* slightly up */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* center */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px){
+     .calling-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .calling-phrase,
+  .calling-info {
+    padding-inline: 1rem;
+    width: 100%;
+  }
+
+  .calling-section {
+    padding: 0rem 0rem 4rem 0rem;
+  }
+
+  .btn-container-calling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px){
+    .calling-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .calling-phrase{
+    font-size: 2rem;
+  }
+
+  .calling-section {
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  .calling-info {
+    font-size: 0.8rem;
+  }
+
+  .btn-container-calling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-calling{
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+}

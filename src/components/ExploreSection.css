@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.explore-section {
+  color: black;
+  background-color: #fdfdfd;
+  padding: 6rem 0rem 4rem 0rem;
+  width: 100%;
+}
+
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding-inline: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  overflow: hidden; /* horizontal scroll */
+}
+
+.explore-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+
+/* Swiper Styles */
+.swiper-container {
+  padding: 2rem 1rem; 
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+  display: flex; 
+}
+
+/* Navagation Buttons Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  background: white;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  top: 40% !important; 
+  margin-top: -20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 14px !important;
+  font-weight: 600;
+  color: black !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: black !important;
+  color: white !important;
+  transform: scale(1.1);
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: white !important;
+}
+
+/* Position - buttons*/
+.swiper-button-prev {
+  left: 60px !important; 
+  right: auto !important;
+}
+
+.swiper-button-next {
+  right: 60px !important; 
+}
+
+.swiper-button-disabled {
+  opacity: 0.5 !important;
+}
+
+/* Asegurar que los slides tengan altura consistente y no se desborden */
+/* .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0; 
+  width: auto; 
+} */
+
+/* Asegurar que las Cards ocupen todo el espacio disponible */
+/* .swiper-slide .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} */
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .explore-header {
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-section{
+    padding: 4rem 0rem 2rem 0rem;
+  }
+  .explore-container {
+    padding-inline: 2rem;
+  }
+
+  .explore-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .swiper-container {
+     padding: 1rem 0.5rem;
+  }
+  
+  /* Visivility - buttons on tablet and mobile */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-container {
+    padding-inline: 1rem;
+  }
+
+  .explore-header {
+    font-size: 1.8rem;
+  }
+  
+  .swiper-container {
+    padding: 1rem 0;
+  }
+}

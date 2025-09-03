@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.kids-section {
+  background-color: #272727;
+  width: 100%;
+}
+
+.kids-container{
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 9rem 0rem; 
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.kids-img-container {
+  height: 34rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.kids-img-container img{
+   transition: opacity 0.5s ease-in-out;
+}
+
+.kids-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.kids-img:hover {
+  transform: scale(1.05);
+}
+
+.kids-info{
+  flex: 1 1 60%;
+  max-width: 100%;
+}
+
+.kids-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fdf5e6; 
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.kids-details-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap:1.5rem;
+  justify-content: flex-start; 
+  align-items: stretch; 
+}
+
+.kids-details {
+  color: #fdf5e6;
+  width: calc(50% - 0.75rem);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02); /* Sutil background */
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.kids-details:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.kids-details:nth-child(3) {
+  width: 100%; 
+}
+
+.kids-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.kids-details.active .kids-title {
+  color: #848181; 
+}
+
+.kids-title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0.5px;
+  background:  #fdfdfd;
+}
+
+.kids-description{
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Toma el espacio disponible */
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: left;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fdf5e6;
+  font-weight: 400;
+  padding: 0rem;
+  align-self: flex-start; /* No se estira */
+}
+
+.service-link:hover{
+  color: #5f5f5e; 
+  transform: translateX(15px);
+  transition: transform 1s ease;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* slightly up */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* center */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kids-container {
+    flex-direction: column;
+    padding: 5rem 1.5rem;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .kids-info {
+    order: 1; /* Info primero en móvil */
+  }
+  
+  .kids-img-container {
+    order: 2;
+    height: 25rem;
+    min-width: unset;
+  }
+  
+  .kids-details-container {
+    justify-content: center;
+  }
+  
+  .kids-details {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .kids-details:nth-child(3) {
+    width: 100%;
+  }
+  
+  .kids-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .service-link {
+    align-self: center;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+ .kids-container {
+    padding: 4rem 1rem;
+    gap: 2rem;
+  }
+  
+  .kids-img-container {
+    height: 20rem;
+    margin: 0;
+  }
+  
+  .kids-header {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+  
+  .kids-details {
+    padding: 1rem;
+  }
+  
+  .kids-title {
+    font-size: 1.3rem;
+  }
+  
+  .kids-description {
+    font-size: 0.9rem;
+  }
+  
+  .service-link {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.85rem;
+  } 
+}
