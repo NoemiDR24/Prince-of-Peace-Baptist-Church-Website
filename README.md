@@ -133,4 +133,4 @@ This project is created for Prince of Peace Baptist Church and is intended for c
 
 ---
 
-**Built with ❤️ for [Church Name] community**
+**Built with ❤️ for Prince of Peace Baptist Church community**

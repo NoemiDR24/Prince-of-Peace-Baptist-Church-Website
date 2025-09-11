@@ -45,12 +45,7 @@
 .location-info{
   flex: 1 1 40%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
-}
+ }
 
 .location-header {
   font-family: "Bebas Neue", sans-serif;
@@ -59,8 +54,6 @@
   font-size: 3rem;
   color: #fdf5e6; 
 }
-
-
 
 .location-hours {
   color: #fdf5e6;

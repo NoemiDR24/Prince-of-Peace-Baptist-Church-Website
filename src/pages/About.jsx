@@ -2,6 +2,7 @@ import HeroSection from '../components/HeroSection.jsx';
 import ExploreSection from '../components/ExploreSection.jsx'
 import StorySection from '../components/StorySection.jsx';
 import { useScrollToHash } from '../hooks/Scroll.jsx';
+import VisionSection from '../components/VisionSection.jsx';
 
 export default function About () {
   useScrollToHash(); 
@@ -16,7 +17,7 @@ export default function About () {
     <>
       <HeroSection
         header="Nuestra Historia"
-        backgroundImage="/img/family.jpg"
+        backgroundImage="/img/about.jpg"
         showButton={false}   
       />
 
@@ -32,20 +33,26 @@ export default function About () {
         details ={details.tasks}
         par4="Que Dios les bendiga."
         par5="Hechos 26:22"
-        // className="dark-story"
+        image= "/img/family.jpg"
       />
   
-      {/* <StorySection 
+      <VisionSection 
         header= "VISIÓN"
         par1= "Ser una iglesia madre que planta congregaciones bautistas independientes por todo Columbus y Ohio, cada una con su propia autonomía y liderazgo local. Visualizamos comunidades hispanas transformadas donde cada iglesia plantada sirva de manera única a su vecindario, alcanzando familias latinas con el mensaje de salvación y formando nuevos líderes cristianos."
         className="dark-story"
+        reverse={true}
+        image= "/img/vision.jpg"
+        id="vision-section"
       />
      
-       <StorySection 
+       <VisionSection
         header= "MISIÓN"
         par1= "Predicar el Evangelio de Jesucristo a la comunidad hispana de Columbus, hacer discípulos comprometidos y plantar nuevas iglesias bautistas independientes que multipliquen el Reino de Dios. Bajo el liderazgo de un pastor con corazón misionero, nos dedicamos a enseñar la Palabra, fortalecer familias y equipar líderes que transformen sus comunidades con el amor de Cristo."
         className="dark-story"
-      /> */}
+        reverse={false}
+        image= "/img/mission.jpg"
+        id="mission-section"
+      />
       <ExploreSection/>
     </>
   );
