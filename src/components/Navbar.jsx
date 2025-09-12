@@ -84,3 +84,8 @@ export default function Navbar() {
   );
 }
 
+// "/team#contact-section"
+// "/events" 
+// "/team"
+// "/faith"
+// "/ministries" 

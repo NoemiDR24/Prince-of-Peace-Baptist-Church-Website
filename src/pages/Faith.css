@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.faith-section {
+  background-color: #272727;
+  color: #fdf5e6;
+  width: 100%;
+}
+
+.faith-container{
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 9rem 0rem; 
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.faith-img-container {
+  height: 34rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.faith-img-container img{
+   transition: opacity 0.5s ease-in-out;
+}
+
+.faith-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.faith-img:hover {
+  transform: scale(1.05);
+} */
+
+.faith-info{
+  flex: 1 1 60%;
+  max-width: 100%;
+}
+
+.faith-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fdf5e6; 
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+
+.faith-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.faith-details.active .faith-title {
+  color: #848181; 
+}
+
+.faith-title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0.5px;
+  background:  #fdfdfd;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* slightly up */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* center */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faith-container {
+    flex-direction: column;
+    padding: 5rem 1.5rem;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .faith-info {
+    order: 1; /* Info primero en móvil */
+  }
+  
+  .faith-img-container {
+    order: 2;
+    height: 25rem;
+    min-width: unset;
+  }
+  
+  .faith-details-container {
+    justify-content: center;
+  }
+  
+  .faith-details {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .faith-details:nth-child(3) {
+    width: 100%;
+  }
+  
+  .faith-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .service-link {
+    align-self: center;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+ .faith-container {
+    padding: 4rem 1rem;
+    gap: 2rem;
+  }
+  
+  .faith-img-container {
+    height: 20rem;
+    margin: 0;
+  }
+  
+  .faith-header {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+  
+  .faith-details {
+    padding: 1rem;
+  }
+  
+  .faith-title {
+    font-size: 1.3rem;
+  }
+  
+  .faith-description {
+    font-size: 0.9rem;
+  }
+  
+  .service-link {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.85rem;
+  } 
+}

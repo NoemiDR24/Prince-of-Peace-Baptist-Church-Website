@@ -5,6 +5,8 @@ import Visit from "./pages/Visit"
 import About from "./pages/About"
 import Footer from "./components/Footer";
 import "./App.css";
+import Events from "./pages/Events";
+import Faith from "./pages/Faith";
 
 function App() {
   return (
@@ -19,10 +21,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/visit" element={<Visit />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/faith" element={<Faith />} /> */}
+          <Route path="/faith" element={<Faith />} />
           {/* <Route path="/ministries" element={<Ministries />} /> */}
           {/* <Route path="/missionaries" element={<Missionaries />} /> */}
           {/* <Route path="/team" element={<Team />} /> */}
+          <Route path="/events" element={<Events />} />
           {/* Más rutas después */}
         </Routes>
       </main>     

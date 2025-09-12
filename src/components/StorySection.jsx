@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function StorySection ({ header, par1, par2, par3, details=[] , par4, par5, className, image, reverse = false}) {
     return (
-        <section className={`story-section ${className || ''}`} id='story-section'>
+        <section className={`story-section ${className || ''}`} id='about-section'>
             <div className='story-wrapper'>
                 <div className='story-header'>
                     <p>{header}</p>
