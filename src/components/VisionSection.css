@@ -1,7 +1,7 @@
 .vision-section {
   background-color:  #272727;
   color: #fdfdfd;
-  padding: 7rem 0rem;
+  padding: 5rem 0rem;
   width: 100%;
 }
 
@@ -42,6 +42,11 @@
   color: #ccc;
   flex: 1;
   margin-right: 2rem; /* space between text and image */
+  background: rgba(255,255,255,0.02);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
 }
 
 .vision-info p {
@@ -91,42 +96,115 @@
 
 /* Responsive */
 @media (max-width: 768px){
-  .vision-container {
+  .vision-container, .vision-container.reverse {
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0;
   }
 
-  .vision-phrase,
-  .vision-info {
+  .vision-header {
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
     padding-inline: 1rem;
-    width: 100%;
+  }
+
+  .vision-phrase {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-inline: 1rem;
   }
 
   .vision-section {
-    padding: 0rem 0rem 4rem 0rem;
+    padding: 2.5rem 0rem 3rem 0rem;
   }
 
+  .vision-info {
+    font-size: 1.05rem;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .vision-info p {
+    margin-bottom: 0.8rem;
+  }
+
+  .vision-img-container {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .vision-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 480px){
-  .vision-container {
+  .vision-container, .vision-container.reverse {
     flex-direction: column;
     align-items: center;
     text-align: center; 
-    gap: 1.5 rem;
+    gap: 1.5rem; /* corregido: sin espacio extra */
+    width: 100%;
+    padding: 0;
   }
 
-  .vision-phrase{
-    font-size: 2rem;
+  .vision-header {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding-inline: 0.5rem;
+  }
+
+  .vision-phrase {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-inline: 0.5rem;
   }
 
   .vision-section {
-    padding: 0rem 0rem 3rem 0rem;
+    padding: 1.5rem 0rem 2rem 0rem;
   }
 
   .vision-info {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
   }
 
+  .vision-info p {
+    margin-bottom: 0.7rem;
+  }
+
+  .vision-img-container {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .vision-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
 }

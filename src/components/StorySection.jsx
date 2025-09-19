@@ -14,16 +14,29 @@ export default function StorySection ({ header, par1, par2, par3, details=[] , p
                         <p>{par1}</p>
                         <p>{par2}</p>
                         <p>{par3}</p>
-                        <ul>
+                          {details.length > 0 && (
+                            <ul className="story-details-list">
+                                {details.map((detail, index) => (
+                                <li key={index} className="story-detail-chip">
+                                    <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '8px' }}/>
+                                    {detail}
+                                </li>
+                                ))}
+                            </ul>
+                            )}
+                        {/* <ul>
                             {details.map((detail, index) => (
                                 <li key={index}> <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '8px' }}/>{detail}</li>
                             ))}
-                        </ul>
+                        </ul> */}
                         <p>{par4}</p>
                         <p className="story-final">{par5}</p>
                     </div> 
                     <div className="story-img-container">
-                        <img className="story-img" src={image}/>
+                        <img className="story-img" 
+                            src={image}  
+                            alt={header || "Imagen de la historia"}
+                        />
                     </div>
                 </div>
 
