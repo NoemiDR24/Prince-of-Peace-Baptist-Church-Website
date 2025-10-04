@@ -51,13 +51,13 @@ export default function Navbar() {
                     {/* Column 1: Quick links */}
                     <div className="menu-column quick-links">
                         <Link to="/about" onClick={toggleMenu}>Conócenos</Link>
-                        <Link to="/team#contact-section" onClick={toggleMenu}>Contáctanos</Link>
+                        <Link to="/contact" onClick={toggleMenu}>Contáctanos</Link>
                         <Link to="/events" onClick={toggleMenu}>Eventos</Link>
                         <Link to="/about#vision-section" onClick={toggleMenu}>Visión</Link>
                     </div>  
                     {/* Column 2: More links */}
                     <div className="menu-column more-links">
-                        <Link to="/team" onClick={toggleMenu}>Equipo</Link>
+                        <Link to="/visit#service-section" onClick={toggleMenu}>Servicios</Link>
                         <Link to="/about#mission-section" onClick={toggleMenu}>Misión</Link>
                         <Link to="/faith" onClick={toggleMenu}>Que Creemos</Link>
                         <Link to="/ministries" onClick={toggleMenu}>Ministerios</Link>

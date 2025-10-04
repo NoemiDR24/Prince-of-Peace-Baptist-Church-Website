@@ -25,7 +25,7 @@ export default function Home () {
         introduction="Plantar iglesias bautistas independientes que transformen la comunidad hispana de Columbus y Ohio, una congregación a la vez."
         showButton={true}    
         buttonText="Visión"
-        buttonLink="/vision"
+        buttonLink="/about#vision-section"
       />
   
       <section className='location-section' id='location-section'>

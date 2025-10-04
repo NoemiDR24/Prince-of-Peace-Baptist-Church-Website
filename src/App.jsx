@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import "./App.css";
 import Events from "./pages/Events";
 import Faith from "./pages/Faith";
+import Contact from "./pages/Contact";
+import Ministries from "./pages/Ministries";
 
 function App() {
   return (
@@ -22,11 +24,9 @@ function App() {
           <Route path="/visit" element={<Visit />} />
           <Route path="/about" element={<About />} />
           <Route path="/faith" element={<Faith />} />
-          {/* <Route path="/ministries" element={<Ministries />} /> */}
-          {/* <Route path="/missionaries" element={<Missionaries />} /> */}
-          {/* <Route path="/team" element={<Team />} /> */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
-          {/* Más rutas después */}
+          <Route path="/ministries" element={<Ministries />} />
         </Routes>
       </main>     
     

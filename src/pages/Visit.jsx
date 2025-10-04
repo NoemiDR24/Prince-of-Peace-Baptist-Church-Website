@@ -5,8 +5,10 @@ import ServiceSection from '../components/ServiceSection.jsx'
 import './Visit.css'
 import Carousel from '../components/Carousel.jsx';
 import KidsSection from '../components/KidsSection.jsx';
+import { useScrollToHash } from '../hooks/Scroll.jsx';
 
 export default function Visit (){
+    useScrollToHash();
 
     const images = [
         "/img/carousel/img1.jpg",
