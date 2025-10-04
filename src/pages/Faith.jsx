@@ -137,7 +137,7 @@ export default function Faith (){
     return(
     <>
       <HeroSection 
-        header="Nuetra Fe"
+        header="Nuestra Fe"
         backgroundImage="/img/faith.jpg"
         showButton={false}   
       />
