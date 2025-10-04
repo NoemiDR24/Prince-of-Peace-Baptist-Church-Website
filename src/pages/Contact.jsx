@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection.jsx';
 import CallingSection from '../components/CallingSection.jsx';
 import ExploreSection from '../components/ExploreSection.jsx';
+import './Contact.css';
 
 export default function Contact() {
   return (
@@ -39,9 +40,6 @@ export default function Contact() {
                     <button type="submit">Enviar</button>
                 </form>
             </div>   
-        </section>
-
-        <section className='contact-info' id='contact-info'>
             <div className='contact-info-wrapper'>
                 <h2>¡Estamos para ayudarte!</h2>
                 <p>Puedes escribirnos directamente a nuestro correo o llamarnos si lo prefieres. Queremos escucharte y responder todas tus inquietudes.</p>
@@ -49,6 +47,10 @@ export default function Contact() {
                 <p>(380) 282-6744</p>
                
             </div>
+        </section>
+
+        <section className='contact-info' id='contact-info'>
+            
         </section>
     
         <ExploreSection/>
