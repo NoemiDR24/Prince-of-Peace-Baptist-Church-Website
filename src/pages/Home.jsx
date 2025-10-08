@@ -14,7 +14,7 @@ export default function Home () {
       <HeroSection
         header="Iglesia Bautista Príncipe de Paz"
         description="Descubre el amor de Dios y el poder de la comunidad. Nuestra iglesia no es solo un edificio, es una familia. ¡Ven a conocernos!"
-        backgroundImage="/img/img11.jpg"
+        backgroundImage="/img/service.jpg"
         showButton={true}    
         buttonText="Conócenos"
         buttonLink="/about"

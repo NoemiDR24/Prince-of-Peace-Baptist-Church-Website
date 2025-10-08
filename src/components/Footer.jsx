@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-copy">
-          <p>Copyright © 2025 IBPPOH - All Rights Reserved.</p>
+          <p>Copyright © 2025 Iglesia Bautista Príncipe de Paz - All Rights Reserved.</p>
         </div>
 
         <div className="footer-socials">

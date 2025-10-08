@@ -20,32 +20,34 @@ export default function Contact() {
 
         <section className='contact-section' id='contact-section'>
             <div className='contact-wrapper'>
-                <form name="contact" method="POST" data-netlify="true" className="contact-form">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <label>
-                        Nombre:
-                        <input type="text" name="name" required />
-                    </label>
-                    
-                    <label>
-                        Email:
-                        <input type="email" name="email" required />
-                    </label>
-                    
-                    <label>
-                        Mensaje:
-                        <textarea name="message" required></textarea>
-                    </label>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>   
-            <div className='contact-info-wrapper'>
-                <h2>¡Estamos para ayudarte!</h2>
-                <p>Puedes escribirnos directamente a nuestro correo o llamarnos si lo prefieres. Queremos escucharte y responder todas tus inquietudes.</p>
-                 <p>ibppoh@gmail.com</p>
-                <p>(380) 282-6744</p>
-               
+                <div className='contact-info-wrapper'>
+                    <h2>¡Estamos para ayudarte!</h2>
+                    <p>Puedes escribirnos directamente a nuestro correo o llamarnos si lo prefieres. Queremos escucharte y responder todas tus inquietudes.</p>
+                    <p>ibppoh@gmail.com</p>
+                    <p>(380) 282-6744</p>
+                    <p>4701 Winchester Pike, Columbus, OH 43232</p>
+                </div>
+                <div className='contact-form-wrapper'>
+                    <form name="contact" method="POST" data-netlify="true" className="contact-form">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <label>
+                            Nombre:
+                            <input type="text" name="name" required />
+                        </label>
+                        
+                        <label>
+                            Email:
+                            <input type="email" name="email" required />
+                        </label>
+                        
+                        <label>
+                            Mensaje:
+                            <textarea name="message" required></textarea>
+                        </label>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>                  
             </div>
         </section>
 
