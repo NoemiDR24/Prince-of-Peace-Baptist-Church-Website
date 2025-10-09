@@ -1,6 +1,8 @@
 import HeroSection from '../components/HeroSection.jsx';
 import CallingSection from '../components/CallingSection.jsx';
 import ExploreSection from '../components/ExploreSection.jsx';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapLocationDot, faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import './Contact.css';
 
 export default function Contact() {
@@ -21,11 +23,19 @@ export default function Contact() {
         <section className='contact-section' id='contact-section'>
             <div className='contact-wrapper'>
                 <div className='contact-info-wrapper'>
-                    <h2>¡Estamos para ayudarte!</h2>
+                    <h2 className="contact-info-title">¡Estamos para ayudarte!</h2>
                     <p>Puedes escribirnos directamente a nuestro correo o llamarnos si lo prefieres. Queremos escucharte y responder todas tus inquietudes.</p>
-                    <p>ibppoh@gmail.com</p>
-                    <p>(380) 282-6744</p>
-                    <p>4701 Winchester Pike, Columbus, OH 43232</p>
+                    <p> <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '8px' }}/> ibppoh@gmail.com</p>
+                    <p> <FontAwesomeIcon icon={faPhone} style={{ marginRight: '8px' }}/>(380) 282-6744</p>
+                    <p> <a
+                        href="https://www.google.com/maps/search/4701+Winchester+Pike,+Columbus,+OH+43232/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="contact-map-link">
+                        <FontAwesomeIcon icon={faMapLocationDot} style={{ marginRight: '8px' }}/>
+                        </a>
+                        4701 Winchester Pike, Columbus, OH 43232
+                    </p>
                 </div>
                 <div className='contact-form-wrapper'>
                     <form name="contact" method="POST" data-netlify="true" className="contact-form">

@@ -38,7 +38,14 @@ export default function Home () {
                         
               <div className='location-hours'>
                 <p><FontAwesomeIcon icon={faClock} className="text-blue-500 text-xl"/>  10:00 am & 11:00 am - Domingo</p>
-                <p><FontAwesomeIcon icon={faMapLocationDot} />  4701 Winchester Pike, Columbus</p>
+                <p><a
+                      href="https://www.google.com/maps/search/4701+Winchester+Pike,+Columbus,+OH+43232/" 
+                      target="_blank" 
+                      rel="noopener noreferrer">
+                      <FontAwesomeIcon icon={faMapLocationDot} style={{ marginRight: '8px' }}/>
+                      </a>
+                      4701 Winchester Pike, Columbus
+                </p>
               </div>
               <div className='btn-container-services'>
                   <Link to="/visit#service-section" className="btn-services">Servicios</Link>

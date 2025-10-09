@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { useScrollToHash } from '../hooks/Scroll.jsx';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
 
@@ -63,10 +65,10 @@ export default function Navbar() {
                         <Link to="/ministries" onClick={toggleMenu}>Ministerios</Link>
                     </div>  
                     {/* Column 3: Contact */}
-                    <div className="menu-column contact info">
+                    <div className="menu-column contact">
                         <h5>Contáctanos</h5>
-                        <p>ibppoh@gmail.com</p>
-                        <p>(380) 282-6744</p>
+                        <p> <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '8px' }}/> ibppoh@gmail.com</p>
+                        <p> <FontAwesomeIcon icon={faPhone} style={{ marginRight: '8px' }}/> (380) 282-6744</p>
                     </div>
                     {/* Column 4: Social Media */}
                     <div className="menu-column social">

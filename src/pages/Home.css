@@ -68,6 +68,10 @@
   margin-right: 0.5rem;
 }
 
+.location-hours svg:hover {
+  color: #5f5f5e; 
+}
+
 .btn-container-services{
   margin-top: 3rem;
 }
