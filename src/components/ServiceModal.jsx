@@ -20,7 +20,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
         'Aplicación práctica',
         'Recursos de estudio'
       ],
-      leader: 'Maestros Jose & Nestor',
+      leader: 'Maestros Jose & Nelson',
       location: 'Salón principal'
     },
     'preaching': {
@@ -55,7 +55,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
         'Ministración personal'
       ],
       leader: 'Pastor Ivan Chacon',
-      location: 'Salón de oración #5'
+      location: 'Salón de oración No.105'
     },
     'nursery': {
       image:'./img/nursery.jpg',
@@ -81,7 +81,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
     },
     'kids': {
       image:'./img/kids.jpg',
-      title: 'Escuela Dominical',
+      title: 'Escuela Bíblica',
       subtitle:'El poder que cambia todo',
       icon: <FontAwesomeIcon icon={faChildren} />,
       time: 'Domingo - 9:30 am | Domingo - 11:00 am | Miércoles - 7:00 pm',

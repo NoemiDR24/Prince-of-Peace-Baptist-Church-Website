@@ -182,7 +182,7 @@
   }
   
   .contact-info-wrapper {
-    order: -1; /* Coloca la información arriba */
+    order: -1; /* Info goes on top */
     text-align: center;
   }
   
@@ -229,18 +229,24 @@
   }
   
   .contact-form-wrapper:hover {
-    transform: translateY(0); /* Desactiva hover en móvil */
+    transform: translateY(0); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   
+  .contact-info-wrapper{
+    align-items: center;
+    margin: auto;
+  }
   .contact-info h2 {
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
+    text-align: center;
   }
   
   .contact-info p {
     font-size: 0.95rem;
     line-height: 1.6;
+    text-align: center;
   }
   
   .contact-form {
@@ -259,7 +265,7 @@
   
   .contact-form input:focus,
   .contact-form textarea:focus {
-    transform: translateY(0); /* Desactiva transformación en móvil */
+    transform: translateY(0);
   }
   
   .contact-form textarea {
@@ -269,10 +275,10 @@
   .contact-form button {
     padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
-    width: 100%; /* Botón de ancho completo */
+    width: 100%;
   }
   
   .contact-form button:hover {
-    transform: translateY(0); /* Desactiva hover en móvil */
+    transform: translateY(0);
   }
 }

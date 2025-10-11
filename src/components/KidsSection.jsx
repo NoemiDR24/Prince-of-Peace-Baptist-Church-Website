@@ -25,7 +25,7 @@ export default function KidsSection () {
           link:'nursery',
           image: '/img/nursery.jpg' 
         },
-        { title: 'Escuela Dominical', 
+        { title: 'Escuela Bíblica', 
           description: 'Cada domingo los niños aprenden sobre el amor de Dios a través de historias bíblicas, juegos y actividades adaptadas a su edad.', 
           link:'kids',
           image: '/img/kids.jpg' 

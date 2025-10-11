@@ -24,7 +24,7 @@ export default function ExploreSection () {
         },
         {
             image:"/img/kids.jpg",
-            header:"Escuela Dominical",
+            header:"Escuela Bíblica",
             description:"Cada domingo los niños aprenden sobre el amor de Dios a través de historias bíblicas, juegos y actividades adaptadas a su edad.",
             link:"/visit#kids-section",
         },
