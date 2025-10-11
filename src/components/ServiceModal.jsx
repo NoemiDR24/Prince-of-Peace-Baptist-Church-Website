@@ -7,7 +7,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
 
   const serviceDetails = {
     'bible-study': {
-      image:'./img/bible-study.jpg',
+      image:'./img/bible-study.webp',
       title: 'Estudio Bíblico',
       subtitle:'Profundizando en la Palabra',
       icon: <FontAwesomeIcon icon={faBookBible} />,
@@ -24,7 +24,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Salón principal'
     },
     'preaching': {
-      image:'./img/service.jpg',
+      image:'./img/service.webp',
       title: 'Servicio de Predicación',
       subtitle:'Donde la Palabra cobra vida',
       icon: <FontAwesomeIcon icon={faMicrophone} />,
@@ -41,7 +41,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Salón principal'
     },
     'praying': {
-      image:'./img/praying.jpg',
+      image:'./img/praying.webp',
       title: 'Servicio de Oración',
       subtitle:'El poder que cambia todo',
       icon: <FontAwesomeIcon icon={faHandsPraying} />,
@@ -58,7 +58,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Salón de oración No.105'
     },
     'nursery': {
-      image:'./img/nursery.jpg',
+      image:'./img/nursery.webp',
       title: 'Guardería',
       subtitle:'Creciendo en amor desde los primeros pasos',
       icon: <FontAwesomeIcon icon={faBaby} />,
@@ -80,7 +80,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Sala de guardería'
     },
     'kids': {
-      image:'./img/kids.jpg',
+      image:'./img/kids.webp',
       title: 'Escuela Bíblica',
       subtitle:'El poder que cambia todo',
       icon: <FontAwesomeIcon icon={faChildren} />,
@@ -102,7 +102,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Salones de FBC Big City'
     },
     'youth': {
-      image:'./img/teens1.jpg',
+      image:'./img/teens1.webp',
       title: 'Servicio de Jóvenes',
       subtitle:'Una generación apasionada por Cristo',
       icon: <FontAwesomeIcon icon={faUserGroup} />,

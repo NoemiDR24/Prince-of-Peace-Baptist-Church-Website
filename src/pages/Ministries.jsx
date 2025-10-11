@@ -7,7 +7,7 @@ export default function Ministries() {
     <>
         <HeroSection
           header="Ministerios"
-          backgroundImage="/img/ministery.jpg"
+          backgroundImage="/img/ministery.webp"
           showButton={false}   
         />
 

@@ -10,7 +10,7 @@ export default function Contact() {
     <>
         <HeroSection
           header="Contáctanos"
-          backgroundImage="/img/contact.jpg"
+          backgroundImage="/img/contact.webp"
           showButton={false}   
         />
 

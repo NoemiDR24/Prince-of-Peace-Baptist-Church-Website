@@ -14,7 +14,7 @@ export default function Home () {
       <HeroSection
         header="Iglesia Bautista Príncipe de Paz"
         description="Descubre el amor de Dios y el poder de la comunidad. Nuestra iglesia no es solo un edificio, es una familia. ¡Ven a conocernos!"
-        backgroundImage="/img/service.jpg"
+        backgroundImage="/img/service.webp"
         showButton={true}    
         buttonText="Conócenos"
         buttonLink="/about"
@@ -31,7 +31,7 @@ export default function Home () {
       <section className='location-section' id='location-section'>
         <div className='location-container'>
           <div className='location-img-container'>
-            <img src='/img/church1.jpg' alt="Church Entrance" className="location-img" />
+            <img src='/img/church.jpg' alt="Church Entrance" className="location-img" />
           </div>
           <div className='location-info'>
               <h1 className='location-header'>Príncipe de paz - Sureste de Columbus</h1>   

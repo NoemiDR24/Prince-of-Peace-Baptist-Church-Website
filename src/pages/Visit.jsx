@@ -29,7 +29,7 @@ export default function Visit (){
     <>
       <HeroSection 
         header="Visita Príncipe de Paz"
-        backgroundImage="/img/visit.jpg"
+        backgroundImage="/img/visit.webp"
         showButton={false}   
       />
    

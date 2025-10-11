@@ -23,17 +23,17 @@ export default function KidsSection () {
         { title: 'Guardería', 
           description: 'Cuidado seguro y amoroso para bebés y niños pequeños mientras los padres participan en los servicios.', 
           link:'nursery',
-          image: '/img/nursery.jpg' 
+          image: '/img/nursery.webp' 
         },
         { title: 'Escuela Bíblica', 
           description: 'Cada domingo los niños aprenden sobre el amor de Dios a través de historias bíblicas, juegos y actividades adaptadas a su edad.', 
           link:'kids',
-          image: '/img/kids.jpg' 
+          image: '/img/kids.webp' 
         },
         { title: 'Servicio de Jóvenes', 
           description: 'Conecta con otros jóvenes, crece en tu fe y descubre tu propósito a través de tiempos de adoración, enseñanzas prácticas y actividades especiales.', 
           link:'youth',
-          image: '/img/teens.jpg' 
+          image: '/img/teens.webp' 
         },
     ];
 

@@ -138,7 +138,7 @@ export default function Faith (){
     <>
       <HeroSection 
         header="Nuestra Fe"
-        backgroundImage="/img/faith.jpg"
+        backgroundImage="/img/faith.webp"
         showButton={false}   
       />
 

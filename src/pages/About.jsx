@@ -17,7 +17,7 @@ export default function About () {
     <>
       <HeroSection
         header="Nuestra Historia"
-        backgroundImage="/img/about.jpg"
+        backgroundImage="/img/about.webp"
         showButton={false}   
       />
 
@@ -41,7 +41,7 @@ export default function About () {
         par1= "Ser una iglesia madre que planta congregaciones bautistas independientes por todo Columbus y Ohio, cada una con su propia autonomía y liderazgo local. Visualizamos comunidades hispanas transformadas donde cada iglesia plantada sirva de manera única a su vecindario, alcanzando familias latinas con el mensaje de salvación y formando nuevos líderes cristianos."
         className="dark-story"
         reverse={true}
-        image= "/img/vision.jpg"
+        image= "/img/vision.webp"
         id="vision-section"
       />
      
@@ -50,7 +50,7 @@ export default function About () {
         par1= "Predicar el Evangelio de Jesucristo a la comunidad hispana de Columbus, hacer discípulos comprometidos y plantar nuevas iglesias bautistas independientes que multipliquen el Reino de Dios. Bajo el liderazgo de un pastor con corazón misionero, nos dedicamos a enseñar la Palabra, fortalecer familias y equipar líderes que transformen sus comunidades con el amor de Cristo."
         className="dark-story"
         reverse={false}
-        image= "/img/mission.jpg"
+        image= "/img/mission.webp"
         id="mission-section"
       />
       <ExploreSection/>
