@@ -153,13 +153,18 @@
 }
 
 @media (max-width: 480px){
+  .vision-wrapper {
+    padding: 0rem;
+  }
   .vision-container, .vision-container.reverse {
     flex-direction: column;
     align-items: center;
     text-align: center; 
     gap: 1.5rem; /* corregido: sin espacio extra */
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .vision-header {
@@ -181,15 +186,20 @@
 
   .vision-info {
     font-size: 0.95rem;
-    padding: 1rem 0.5rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem 1rem; 
+    margin-right: 0rem;
+    margin-bottom: 0rem;
     width: 100%;
     box-sizing: border-box;
+    align-items: center;
     text-align: center;
   }
 
   .vision-info p {
-    margin-bottom: 0.7rem;
+    margin:0 auto;
+    text-align: center;
+    padding: 0; 
+    max-width: 100%; 
   }
 
   .vision-img-container {

@@ -61,11 +61,11 @@
 }
 
 .logo {
-  height:80px;
+  height:70px;
 }
 
 .menu{
-    height: 55px;
+    height: 50px;
     padding: 0.5rem 0rem;
     margin:auto;
     filter: brightness(0) invert(1);
@@ -291,11 +291,15 @@
   }
 
   .logo {
-    height: 60px;
+    height: 50px;
   }
 
   .custom-navbar {
     padding: 0.5rem 1rem;
+  }
+
+  .menu{
+    height: 35px;
   }
 
 }

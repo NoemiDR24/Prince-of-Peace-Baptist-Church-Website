@@ -33,7 +33,7 @@ export default function Navbar() {
             
             <div className="nav-center">
                 <Link  to="/" onClick={() => setMenuOpen(false)}>
-                    <img src="/img/logo-white.png" 
+                    <img src="/img/logo-white.webp" 
                     alt="Logo" 
                     className="logo"/>
                 </Link>
