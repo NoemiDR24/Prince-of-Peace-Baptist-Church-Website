@@ -174,7 +174,7 @@ export default function Faith (){
                     </ol>
                     </div>
                     <div className="faith-img-container">
-                    <img src={block.image} alt="Fe, Bautismo" className="faith-img" />
+                    <img src={block.image} alt="Fe, Bautismo" className="faith-img" loading="lazy" />
                     </div>
                 </div>
             ))}

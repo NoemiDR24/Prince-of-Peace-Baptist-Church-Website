@@ -36,6 +36,7 @@ export default function StorySection ({ header, par1, par2, par3, details=[] , p
                         <img className="story-img" 
                             src={image}  
                             alt={header || "Imagen de la historia"}
+                            loading="lazy" 
                         />
                     </div>
                 </div>

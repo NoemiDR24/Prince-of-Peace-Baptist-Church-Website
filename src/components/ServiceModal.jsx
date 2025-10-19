@@ -144,7 +144,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
 
           <div className="modal-body">
             <div className='service-image'> 
-                <img src={currentService.image}/>
+                <img src={currentService.image}  loading="lazy" />
             </div>
             <div className="service-description">
               <p className="service-title">{currentService.subtitle}</p>

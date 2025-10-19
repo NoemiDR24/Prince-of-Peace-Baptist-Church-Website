@@ -14,7 +14,7 @@ export default function VisionSection ({ header, par1, image, reverse = false, i
                         <p>{par1}</p>
                     </div> 
                     <div className="vision-img-container">
-                        <img className="vision-img" src={image}/>
+                        <img className="vision-img" src={image} loading="lazy" />
                     </div>
                 </div>
             </div>  

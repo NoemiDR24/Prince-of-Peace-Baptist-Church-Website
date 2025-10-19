@@ -31,7 +31,7 @@ export default function Home () {
       <section className='location-section' id='location-section'>
         <div className='location-container'>
           <div className='location-img-container'>
-            <img src='/img/church.webp' alt="Church Entrance" className="location-img" />
+            <img src='/img/church.webp' loading="lazy" alt="Church Entrance" className="location-img" />
           </div>
           <div className='location-info'>
               <h1 className='location-header'>Príncipe de paz - Sureste de Columbus</h1>   

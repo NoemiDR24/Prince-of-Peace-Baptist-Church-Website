@@ -30,6 +30,7 @@ export default function Carousel({ images }) {
                                 src={img}
                                 alt={`slide-${index}`}
                                 className="w-full h-64 object-cover rounded-lg shadow-md carousel-img"
+                                loading="lazy" 
                             />
                         </div>                    
                     </SwiperSlide>

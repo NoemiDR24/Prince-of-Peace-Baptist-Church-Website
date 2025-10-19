@@ -8,7 +8,7 @@ export default function Card ({image, header, description, link}){
         <>
         <div className='card'>
             <div className='img-container'>
-            <img src={image} alt={header} className='img'/>
+            <img src={image} alt={header} className='img' loading="lazy"/>
             </div>
             <div className='card-info'>
             <h2 className='card-info-header'>{header}</h2>
