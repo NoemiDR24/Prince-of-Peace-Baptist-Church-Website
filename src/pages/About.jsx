@@ -17,7 +17,7 @@ export default function About () {
     <>
       <HeroSection
         header="Nuestra Historia"
-        backgroundImage="/img/about.webp"
+        backgroundImage="/img/about-hero.webp"
         showButton={false}   
       />
 
@@ -33,7 +33,7 @@ export default function About () {
         details ={details.tasks}
         par4="Que Dios les bendiga."
         par5="Hechos 26:22"
-        image= "/img/family.jpg"
+        image= "/img/family.webp"
       />
   
       <VisionSection 

@@ -24,7 +24,7 @@ export default function ServiceModal ({ service, isOpen, onClose }){
       location: 'Salón principal'
     },
     'preaching': {
-      image:'./img/service.webp',
+      image:'./img/service-modal.webp',
       title: 'Servicio de Predicación',
       subtitle:'Donde la Palabra cobra vida',
       icon: <FontAwesomeIcon icon={faMicrophone} />,

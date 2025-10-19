@@ -11,37 +11,37 @@ export default function ExploreSection () {
     useScrollToHash(); 
     const cards = [
         {
-            image:"/img/service.webp",
+            image:"/img/service-explore.webp",
             header:"Visítanos el Domingo",
             description:"Te invitamos a ser parte de nuestra familia. Conoce qué esperar, dónde estamos y cómo podemos recibirte con alegría en tu primera visita.",
             link:"/visit#hero-section",
         },
         {
-            image:"/img/bible.webp",
+            image:"/img/bible-explore.webp",
             header:"Ministerios",                         
             description:"Descubre cómo puedes crecer en tu fe y servir a otros a través los diferentes ministerios en Príncipe de Paz. Hay un lugar para ti.",
             link:"/ministers",
         },
         {
-            image:"/img/kids.webp",
+            image:"/img/kids-explore.webp",
             header:"Escuela Bíblica",
             description:"Cada domingo los niños aprenden sobre el amor de Dios a través de historias bíblicas, juegos y actividades adaptadas a su edad.",
             link:"/visit#kids-section",
         },
         {
-            image: "/img/teens.webp",
+            image: "/img/teens-explore.webp",
             header:"Servicio de Jóvenes",
             description:"Conecta con otros jóvenes, crece en tu fe y descubre tu propósito a través de tiempos de adoración, enseñanzas prácticas y actividades especiales.",
             link:"/visit#kids-section",
         },
         {
-            image: "/img/preach.webp",
+            image: "/img/preach-explore.webp",
             header:"Transmisiones en Vivo",
             description:"Mira nuestros servicios en vivo o accede a grabaciones pasadas directamente en nuestra página de Facebook. Siempre hay una palabra para ti.",
             link:"/visit#service-section",
         },
         {
-            image: "/img/faith.webp",
+            image: "/img/faith-explore.webp",
             header:"Nuestra Fe",
             description:"Descubre los fundamentos de nuestra fe: creemos en un Dios vivo, en la salvación a través de Jesús y en el poder transformador del Espíritu Santo.",
             link:"/about#faith",

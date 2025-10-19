@@ -30,7 +30,7 @@ export default function Faith (){
                 },                  
                 
             ],
-            image: '/img/baptism.jpg'
+            image: '/img/baptism.webp'
         },
         {
             start: 4,
@@ -59,7 +59,7 @@ export default function Faith (){
                 },   
                 
             ],
-            image: '/img/baptism1.jpg'
+            image: '/img/baptism1.webp'
         },
         {
             start: 7,
@@ -103,7 +103,7 @@ export default function Faith (){
                     ]
                 }
             ],
-            image: '/img/baptism2.jpg'
+            image: '/img/baptism2.webp'
         },
          {
             start: 13,
@@ -130,7 +130,7 @@ export default function Faith (){
                 ]
                 }
             ],
-            image: '/img/baptism3.jpg'
+            image: '/img/baptism3.webp'
         }
     ];
 
@@ -138,7 +138,7 @@ export default function Faith (){
     <>
       <HeroSection 
         header="Nuestra Fe"
-        backgroundImage="/img/faith.webp"
+        backgroundImage="/img/faith-hero.webp"
         showButton={false}   
       />
 

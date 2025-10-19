@@ -11,25 +11,25 @@ export default function Visit (){
     useScrollToHash();
 
     const images = [
-        "/img/carousel/img1.jpg",
-        "/img/carousel/img2.jpg",
-        "/img/carousel/img3.jpg",
-        "/img/carousel/img4.jpg",
-        "/img/carousel/img5.jpg",
-        "/img/carousel/img6.jpg",
-        "/img/carousel/img7.jpg",
-        "/img/carousel/img8.jpg",
-        "/img/carousel/img9.jpg",
-        "/img/carousel/img10.jpg",
-        "/img/carousel/img11.jpg",
-        "/img/carousel/img12.jpg",
+        "/img/carousel/img1.webp",
+        "/img/carousel/img2.webp",
+        "/img/carousel/img3.webp",
+        "/img/carousel/img4.webp",
+        "/img/carousel/img5.webp",
+        "/img/carousel/img6.webp",
+        "/img/carousel/img7.webp",
+        "/img/carousel/img8.webp",
+        "/img/carousel/img9.webp",
+        "/img/carousel/img10.webp",
+        "/img/carousel/img11.webp",
+        "/img/carousel/img12.webp",
     ];
 
   return(
     <>
       <HeroSection 
         header="Visita Príncipe de Paz"
-        backgroundImage="/img/visit.webp"
+        backgroundImage="/img/visit-hero.webp"
         showButton={false}   
       />
    
