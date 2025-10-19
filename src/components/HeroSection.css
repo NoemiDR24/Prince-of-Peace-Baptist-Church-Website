@@ -59,17 +59,17 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  animation: fadeInUp 0.6s ease-out forwards;
-  opacity: 0; 
-  animation-delay: 0.15s;
+  gap: 4rem;  
   width: 90%;
   max-width: 68.75rem;
+
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0; 
+  animation-delay: 0.1s;
 }
 
 .hero-header {
@@ -125,7 +125,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, -60%); /* un poco más arriba */
+    transform: translate(-50%, -45%); /* un poco más arriba */
   }
   100% {
     opacity: 1;
