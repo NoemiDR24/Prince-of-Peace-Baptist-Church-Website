@@ -275,52 +275,60 @@
 
 }
 
-@media (max-width: 480px) { /* moviles */ 
-  .nav-right {
-    display: none;
+@media (max-width: 480px) { /* mobile */
+  .custom-navbar {
+    padding: 0.3rem 0.8rem;
+    height: 70px; /* antes 100px */
   }
 
   .nav-left {
-    justify-content: flex-start;
     flex: 1;
+    justify-content: flex-start;
   }
 
   .nav-center {
     flex: 1;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+  }
+
+  .nav-right {
+    display: none; /* ocultamos botón de visita en móvil */
   }
 
   .logo {
-    height: 50px;
+    height: 40px; /* antes 50px */
+    width: auto;
   }
 
-  .custom-navbar {
-    padding: 0.5rem 1rem;
+  .menu {
+    height: 28px; /* antes 35px */
+    padding: 0;
   }
 
-  .menu{
-    height: 35px;
+  .menu-overlay-content {
+    grid-template-areas:
+      "quick-links"
+      "more-links"
+      "contact"
+      "social";
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
   }
 
-}
+  .menu-column a {
+    font-size: 1.2rem; /* reduce tamaño texto del menú */
+  }
 
-/* Animation */
-@keyframes fadeSlideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+  .menu-column h5 {
+    font-size: 0.85rem;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+  .menu-column p {
+    font-size: 0.75rem;
   }
-  to {
-    opacity: 1;
+
+  .socials {
+    font-size: 1.2rem;
   }
 }

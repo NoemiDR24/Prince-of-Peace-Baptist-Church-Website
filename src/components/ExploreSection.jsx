@@ -20,7 +20,7 @@ export default function ExploreSection () {
             image:"/img/bible-explore.webp",
             header:"Ministerios",                         
             description:"Descubre cómo puedes crecer en tu fe y servir a otros a través los diferentes ministerios en Príncipe de Paz. Hay un lugar para ti.",
-            link:"/ministers",
+            link:"/ministries#hero-section",
         },
         {
             image:"/img/kids-explore.webp",
@@ -44,7 +44,7 @@ export default function ExploreSection () {
             image: "/img/faith-explore.webp",
             header:"Nuestra Fe",
             description:"Descubre los fundamentos de nuestra fe: creemos en un Dios vivo, en la salvación a través de Jesús y en el poder transformador del Espíritu Santo.",
-            link:"/about#faith",
+            link:"/faith#faith-section",
         },
     ];
 
